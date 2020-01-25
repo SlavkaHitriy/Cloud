@@ -4,6 +4,8 @@
 html{
    box-sizing: border-box;
    overflow-x: hidden;
+   max-width: 100vw;
+   width: 100%;
 }
 *,
 *::before,
@@ -15,6 +17,8 @@ body{
    font-weight: 500;
    color: #fff;
    overflow-x: hidden;
+   max-width: 100vw;
+   width: 100%;
 }
 a{
    text-decoration: none;
