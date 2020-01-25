@@ -17,23 +17,27 @@
     <header class="header">
         <div class="container">
             <div class="header__top">
-                <a href="#" class="header__logo">
-                    Cloud.<span>24</span>
-                </a>
-                <div class="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="container">
+                    <div class="header__top-inner">
+                        <a href="#" class="header__logo">
+                            Cloud.<span>24</span>
+                        </a>
+                        <div class="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <nav class="header__menu hide">
+                            <ul class="header__menu-list">
+                                <li class="header__menu-item"><a href="#">Home</a></li>
+                                <li class="header__menu-item"><a href="#">Map</a></li>
+                                <li class="header__menu-item"><a href="#">News</a></li>
+                                <li class="header__menu-item"><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <button class="header__get-btn btn">Get App</button>
+                    </div>
                 </div>
-                <nav class="header__menu hide">
-                    <ul class="header__menu-list">
-                        <li class="header__menu-item"><a href="#">Home</a></li>
-                        <li class="header__menu-item"><a href="#">Map</a></li>
-                        <li class="header__menu-item"><a href="#">News</a></li>
-                        <li class="header__menu-item"><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-                <button class="header__get-btn btn">Get App</button>
             </div>
             <div class="header__inner">
                 <div class="header__content">
@@ -47,24 +51,24 @@
                     </div>
                     <div class="header__bottom-text">Best way to know your city weather.</div>
                 </div>
-                <div class="wheather-app">
-                    <div class="wheather__report">
-                        <img class="wheather__report-img" src="images/cloud.png" alt="wheather">
-                        <div class="wheather__box">
-                            <h4 class="wheather__title">Weather Report</h4>
-                            <div class="wheather__desc">29th May 2019, Golapgonj, Sylhet</div>
+                <div class="weather-app">
+                    <div class="weather__report">
+                        <img class="weather__report-img" src="images/icons/unknown.png" alt="weather">
+                        <div class="weather__box">
+                            <h4 class="weather__title">Weather Report</h4>
+                            <div class="weather__desc"><span class="weather__date">- - -</span>, <span class="weather__city"></span></div>
                         </div>
                     </div>
-                    <div class="wheather__inner">
-                        <div class="wheather__temp">
-                            <div class="wheather__temp-number">37°<span>Cloud & Sunshine</span></div>
-                            <img class="wheather__temp-img" src="images/cloud.png" alt="cloud">
+                    <div class="weather__inner">
+                        <div class="weather__temp">
+                            <div class="weather__temp-number"><span class="weather__temp-cels"></span><span class="weather__type">--</span></div>
+                            <img class="weather__temp-img" src="images/icons/unknown.png" alt="cloud">
                         </div>
-                        <div class="wheather__details">
-                            <div class="wheather__speed wheather__item">4<span>mm/h</span></div>
-                            <div class="wheather__miles wheather__item">7<span>mph</span></div>
-                            <div class="wheather__wind wheather__item">5<span>m/s</span></div>
-                            <div class="wheather__more">
+                        <div class="weather__details">
+                            <div class="weather__speed weather__item">-<span></span></div>
+                            <div class="weather__miles weather__item">-<span></span></div>
+                            <div class="weather__wind weather__item">-<span></span></div>
+                            <div class="weather__more">
                                 Today’s Weather Forecast
                                 <p>
                                     Yet too often some very human cultural artifacts really

@@ -9,6 +9,7 @@
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   padding-top: 170px;
 }
 .header__logo{
    font-family: 'Futura';
@@ -21,11 +22,34 @@
    }
 }
 .header__top{
+   transition: all .4s;
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: 10;
+   width: 100%;
+   padding-top: 20px;
+   padding-right: 20px;
+   padding-left: 20px;
+   padding-bottom: 20px;
+   &.active{
+      position: fixed;
+      animation: animScroll .3s forwards;
+      background-color: rgba(34,4,134, 1);
+      box-shadow: 0 2px 10px 2px rgba(#fff, .4);
+   }
+}
+@keyframes animScroll{
+   0%{
+      transform: translateY(-100%);
+   }
+   100%{
+      transform: translateY(0);
+   }
+}
+.header__top-inner{
    display: flex;
    align-items: center;
-   padding-top: 30px;
-   margin-bottom: 110px;
-   position: relative;
 }
 .header__menu{
    margin-left: auto;
@@ -41,6 +65,7 @@
    width: 30px;
    height: 25px;
    z-index: 6;
+   transition: all .3s;
    span{
       display: block;
       width: 30px;
@@ -141,11 +166,11 @@
    display: flex;
    justify-content: space-between;
 }
-.wheather-app{
+.weather-app{
    background-image: linear-gradient(-10deg, #210594 0%, #4114b8 100%);
    border-radius: 10px;
 }
-.wheather__report{
+.weather__report{
    width: 100%;
    padding: 30px 20px 35px 20px;
    display: flex;
@@ -154,10 +179,11 @@
    margin-bottom: 20px;
    align-items: flex-start;
 }
-.wheather__report-img{
+.weather__report-img{
    margin-right: 30px;
+   width: 100px;
 }
-.wheather__title{
+.weather__title{
    font-size: 28px;
    font-weight: 400;
    text-transform: uppercase;
@@ -165,48 +191,48 @@
    margin-bottom: 20px;
    margin-top: 8px;
 }
-.wheather__desc{
+.weather__desc{
    font-size: 20px;
    letter-spacing: 0.5px;
    font-weight: 400;
 }
-.wheather__inner{
+.weather__inner{
    display: flex;
    height: 75%;
 }
-.wheather__temp{
+.weather__temp{
    background-image: linear-gradient(to top, #2e129c 0%, #471eb8 100%);
    margin-left: 12px;
    min-width: 45%;
    position: relative;
 }
-.wheather__temp-img,
-.wheather__temp-number{
+.weather__temp-img,
+.weather__temp-number{
    position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
 }
-.wheather__temp-number{
+.weather__temp-cels{
    top: 55%;
    font-size: 100px;
    z-index: 2;
-   span{
-      font-size: 20px;
-      white-space: nowrap;
-      display: block;
-      margin-top: 5px;
-      text-transform: uppercase;
-      letter-spacing: 0.2px;
-   }
 }
-.wheather__temp-img{
+.weather__type{
+   font-size: 20px;
+   white-space: nowrap;
+   display: block;
+   margin-top: -5px;
+   text-transform: uppercase;
+   letter-spacing: 0.2px;
+}
+.weather__temp-img{
    z-index: 1;
    opacity: .1;
    width: 90%;
    height: 50%;
 }
-.wheather__details{
+.weather__details{
    background-image: linear-gradient(to top, #240a98 0%, #3d16b3 100%);
    margin-left: 12px;
    margin-right: 13px;
@@ -214,7 +240,7 @@
    padding-bottom: 40px;
    padding-top: 55px;
 }
-.wheather__item{
+.weather__item{
    font-size: 48px;
    letter-spacing: 2.4px;
    padding-left: 84px;
@@ -223,7 +249,7 @@
    background-repeat: no-repeat;
    background-position: left center;
    background-size: 60px;
-   & + .wheather__item{
+   & + .weather__item{
       margin-top: 55px;
    }
    span{
@@ -231,16 +257,16 @@
       letter-spacing: 1.1px;
    }
 }
-.wheather__speed{
-   background-image: url(../images/wheather1.png);
+.weather__speed{
+   background-image: url(../images/weather1.png);
 }
-.wheather__miles{
-   background-image: url(../images/wheather2.png);
+.weather__miles{
+   background-image: url(../images/weather2.png);
 }
-.wheather__wind{
-   background-image: url(../images/wheather3.png);
+.weather__wind{
+   background-image: url(../images/weather3.png);
 }
-.wheather__more{
+.weather__more{
    margin-top: 60px;
    font-size: 18px;
    font-weight: 400;
