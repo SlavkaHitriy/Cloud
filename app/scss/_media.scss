@@ -1,3 +1,39 @@
+@media (min-width: 1200px) and (max-height: 1000px){
+   .header__top{
+      margin-bottom: 20px;
+   }
+}
+@media (min-width: 1200px) and (max-height: 900px){
+   .wheather__details{
+      padding: 20px;
+   }
+   .wheather__item{
+      & + .wheather__item{
+         margin-top: 20px;
+      }
+   }
+   .wheather-app{
+      padding-bottom: 20px;
+   }
+}
+@media (min-width: 1200px) and (max-height: 900px){
+   .header__content{
+      padding-top: 30px;
+   }
+   .header__title{
+      margin-bottom: 20px;
+   }
+   .header__text{
+      margin-bottom: 30px;
+   }
+   .wheather__report{
+      padding: 20px;
+   }
+   .wheather__more{
+      margin-top: 20px;
+   }
+}
+
 @media (max-width: 1400px){
    .footer__chat{
       top: -110%;
